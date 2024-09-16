@@ -1,0 +1,20 @@
+@host = http://localhost:5003
+
+POST {{host}}/createorder HTTP/1.1
+content-type: application/json
+
+{
+  "customerId": "{{$guid}}",
+  "customerOrderId": "{{$guid}}",
+  "lineItems": [
+    {
+      "productId": "{{$guid}}",
+      "quantity": {{$randomInt 1 100}},
+      "price": {{$randomInt 1 1000}}
+    }
+  ]
+}
+
+### Get Orders 
+GET  {{host}}/getorders HTTP/1.1
+content-type: application/json

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AqsOrderProcessor", "AqsOrderProcessor\AqsOrderProcessor.csproj", "{3C4A117B-BFB7-43A1-B175-BB23029A54D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AqsPortal", "AqsPortal\AqsPortal.csproj", "{E69207D8-BCDA-48EA-B327-230895420BF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonApi", "AmazonApi\AmazonApi.csproj", "{E0688271-5644-4D68-B02C-6BD228151AAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgilityApi", "AgilityApi\AgilityApi.csproj", "{BF59D87A-1BAC-4792-9519-546108810B7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AqsApi", "AqsApi\AqsApi.csproj", "{7103082F-FBCF-4B9B-8531-73B0AC7D65F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AqsCore", "AqsCore\AqsCore.csproj", "{A06BAABF-7D35-40A1-B5DA-9DF3DE2676F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api-tests", "api-tests", "{5BA65DB5-F957-43F2-A973-A9C9C4FB4939}"
+	ProjectSection(SolutionItems) = preProject
+		aqsapi.http = aqsapi.http
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C4A117B-BFB7-43A1-B175-BB23029A54D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4A117B-BFB7-43A1-B175-BB23029A54D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4A117B-BFB7-43A1-B175-BB23029A54D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4A117B-BFB7-43A1-B175-BB23029A54D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69207D8-BCDA-48EA-B327-230895420BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69207D8-BCDA-48EA-B327-230895420BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69207D8-BCDA-48EA-B327-230895420BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69207D8-BCDA-48EA-B327-230895420BF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0688271-5644-4D68-B02C-6BD228151AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0688271-5644-4D68-B02C-6BD228151AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0688271-5644-4D68-B02C-6BD228151AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0688271-5644-4D68-B02C-6BD228151AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF59D87A-1BAC-4792-9519-546108810B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF59D87A-1BAC-4792-9519-546108810B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF59D87A-1BAC-4792-9519-546108810B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF59D87A-1BAC-4792-9519-546108810B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7103082F-FBCF-4B9B-8531-73B0AC7D65F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7103082F-FBCF-4B9B-8531-73B0AC7D65F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7103082F-FBCF-4B9B-8531-73B0AC7D65F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7103082F-FBCF-4B9B-8531-73B0AC7D65F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A06BAABF-7D35-40A1-B5DA-9DF3DE2676F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A06BAABF-7D35-40A1-B5DA-9DF3DE2676F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A06BAABF-7D35-40A1-B5DA-9DF3DE2676F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A06BAABF-7D35-40A1-B5DA-9DF3DE2676F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

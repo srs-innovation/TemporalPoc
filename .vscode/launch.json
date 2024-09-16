@@ -1,0 +1,107 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "AqsPortal(Web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-aqsportal",
+            "program": "${workspaceFolder}/AqsPortal/bin/Debug/net8.0/AqsPortal.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5000"
+                },
+            "sourceFileMap": {
+                "/{Pages}": "${workspaceFolder}/AqsPortal/Pages"
+            }
+        },
+        {
+            "name": "AgilityApi",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-agilityapi",
+            "program": "${workspaceFolder}/AgilityApi/bin/Debug/net8.0/AgilityApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s/swagger"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5001"
+                },
+        },  
+        {
+            "name": "AmazonApi",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-amazonapi",
+            "program": "${workspaceFolder}/AmazonApi/bin/Debug/net8.0/AmazonApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s/swagger"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5002"
+                },
+        },  
+        {
+            "name": "AqsApi",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-aqsapi",
+            "program": "${workspaceFolder}/AqsApi/bin/Debug/net8.0/AqsApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s/swagger"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5003"
+                },
+        },  
+    ],
+    "compounds": [
+        {
+            "name": "LaunchAll",
+            "configurations": [
+                "AmazonApi",
+                "AqsApi",
+                "AgilityApi",
+                "AqsPortal(Web)"
+            ],
+        },
+        {
+            "name": "Hold",
+            "configurations": [
+                "AqsApi",
+                "AqsPortal(Web)"
+            ],
+        }
+    ]
+}
