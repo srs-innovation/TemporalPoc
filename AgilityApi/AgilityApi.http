@@ -1,0 +1,6 @@
+@AgilityApi_HostAddress = http://localhost:5293
+
+GET {{AgilityApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,6 @@
+@AqsApi_HostAddress = http://localhost:5198
+
+GET {{AqsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

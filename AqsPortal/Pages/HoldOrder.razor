@@ -1,0 +1,37 @@
+﻿@page "/holdOrder"
+@using AqsCore
+@inject AqsService Service
+<h3>HoldOrder</h3>
+
+@if (Orders.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Order Date</th>
+                <th>Order Status</th>
+                <th>Order Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Orders)
+            {
+                <tr>
+                    <td>@order.CustomerId</td>
+                    <td>@order.CustomerOrderId</td>
+                    <td>@order.Status</td>
+                    <td>@order.TransactionId</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<AqsOrderResponseDto> Orders = [];
+    protected override async Task OnInitializedAsync()
+    {
+       Orders = await Service.GetOrders();
+    }
+}
